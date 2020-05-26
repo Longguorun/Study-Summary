@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>淘宝网 - 淘！我喜欢</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="js/jquery-1.12.2.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/template.js"></script>
+	<script type="text/html" id="tbs">
+			{{each result as value1 i1}}
+			<li class="searchRe">{{#value1[0]}}
+				{{each magic as value2 i2}}
+				{{if value2.index == i1+1}}
+					 >  
+				{{/if}}			
+				{{/each}}
+			</li>
+			{{/each}}
+	</script>
+	<script type="text/html" id="det">
+			{{each data as value1 i1}}
+			<div class="row">
+				{{each value1 as value2 i2}}
+					<div class='
+						{{if value2.type}}
+							{{value2.type}}
+						{{/if}}
+					'>{{value2.title}}</div>
+				{{/each}}
+			</div>		
+			{{/each}}
+		</div>
+	</script>
+</head>
+<body class="iconfont">
+	<div class="content" id="site-nav-box">
+		<div class="site-nav">
+			<div class="site-nav-left">
+				<div class="snc" id="location">中国大陆 &#xe612;</div>
+				<div class="snc" id="userDetail">账号 &#xe612;</div>
+				<div class="snc" id="mobileUse">
+					<a href="https://market.m.taobao.com/app/	fdilab/download-page/main/index.html?spm=a21bo.2017.1997563273.1.5af911d9tX5lre">手机逛淘宝</a>
+				</div>
+			</div>
+			<div class="site-nav-right">
+				<div class="snc" id="mytb"><a href="#">我的淘宝 &#xe612;</a></div>
+				<div class="snc" id="shoppingCar"><a href="#">&#xe600; 购物车</a></div>
+				<div class="snc" id="favorate"><a href="#">&#xe62e; 收藏夹 &#xe612;</a></div>
+				<div class="snc" id="sort"><a href="https://www.taobao.com/tbhome/page/market-list?spm=a21bo.2017.1997563209.1.5af911d9uPxjxL">商品分类</a></div>
+				<div class="snc" id="qnmjzx"><a href="https://login.taobao.com/member/login.jhtml?from=taobaoindex&f=top&style=&sub=true&redirect_url=https%3A%2F%2Fmyseller.taobao.com%2Fseller_admin.htm">千牛卖家中心 &#xe612;</a></div>
+				<div class="snc" id="service"><a href="#">联系客服 &#xe612;</a></div>
+				<div class="snc" id="web-nav"><a href="#">&#xe62b; 网站导航 &#xe612;</a></div>
+			</div>
+		</div>		
+	</div>
+
+	<div class="content" id="logo-nav-box">
+		<div class="logo-nav  clearfix">
+			<div id="logo">
+				<img src="./img/taobao.png" alt="taobao" height="80px">
+			</div>
+			<div id="tbSearch">
+				<div id="searchSource">
+					<span>宝贝</span>
+					<span>天猫</span>
+					<span>店铺</span>
+				</div>
+				<div id="serach">
+					<input type="text" class="iconfont" placeholder="&#xe66d;请输入商品名" id="serachText">
+					<div id="cameraSearch" >&#xe614;</div>
+					<button id="searchBtn">搜索</button>
+				</div>
+				<div id="searchRecommend"></div>
+				<ul id="searchResults">
+
+				</ul>
+					<!-- <div id="searchResultsDetail"></div> -->			
+			</div>
+			<div id="digitalCode">
+				<div id="closeDigitalCode">x</div>
+				<p>手机淘宝</p>
+				<img src="img/下载.png" width="60px" height="60px">
+			</div>
+			
+		</div>
+	</div>
+	
+	
+</body>
+</html>

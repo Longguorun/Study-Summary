@@ -1,0 +1,230 @@
+* {
+	margin: 0;
+}
+input {
+	outline: none;
+}
+button {
+	outline: none;
+}
+a {
+	text-decoration: none;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('./font/iconfont.eot');
+  src: url('./font/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('./font/iconfont.woff2') format('woff2'),
+      url('./font/iconfont.woff') format('woff'),
+      url('./font/iconfont.ttf') format('truetype'),
+      url('./font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.clearfix:before,
+.clearfix:after {   
+	content:"";  display:table; 
+	}
+.clearfix:after {	
+  	clear:both;
+}
+.clearfix {
+  	*zoom:1;
+}
+.content {
+	width: 100%;
+}
+#site-nav-box {
+	background-color: #f5f5f5;
+}
+.site-nav {
+	width: 1200px;
+	height: 35px;			
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.site-nav a:hover {
+	color: #F40;
+}
+.site-nav-left {
+	height: 35px;
+	display: flex;
+}
+.site-nav-right {
+	height: 35px;
+	display: flex;
+}
+.snc {
+	padding: 0 6px;
+	font-size: 12px;
+	line-height: 35px;
+	color: #6C6C6C;
+}
+.snc a {
+	color: #6C6C6C;
+}
+/*********************************************/
+#logo-nav-box {
+	width: 100%;
+	background-color: #FFF;
+}
+.logo-nav {
+	margin: 0 auto;
+	width: 1200px;
+	height: 120px;
+	position: relative;
+}
+#logo {
+	margin: 20px 0;
+	float: left;
+}
+#search {
+	display: flex;
+}
+#tbSearch {
+	width: 600px;
+	margin: 20px auto;
+	position: relative;
+}
+#searchSource{
+	margin-left: 20px;
+	padding: 0;
+}
+#searchSource span {
+	margin: 0 6px;
+	font-size: 12px;
+	color: #F40;
+	cursor: pointer;	
+	padding: 0;
+}
+#searchSource span:hover{
+	background-color: pink;
+
+}
+#serach {
+	display: flex;
+}
+#serachText {
+	height: 35px; 	
+	width: 485px;
+	border: 2px solid #F40;
+	border-right: none;
+	border-radius: 17.5px 0 0 17.5px;
+	padding: 0 0 0 17.5px;
+}
+#cameraSearch {
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border-bottom: 2px solid #F40;
+	border-top: 2px solid #F40;
+	cursor: pointer;
+}
+#searchBtn {
+	width: 80px;
+	border-radius: 0 17.5px  17.5px 0;
+	border: 2px solid #F40;
+	background-color: #F40;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+#searchRecommend {
+	margin-left: 20px;
+	padding: 0;
+}
+#searchResults {
+	width: 522px;
+	background-color: #fff;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	padding: 0;
+}
+#searchResults .searchRe {
+	width: 100%;
+	height: 15px;
+	font-size: 12px;
+	line-height: 12px;
+	list-style-type: none;
+	padding: 5px 0 5px;
+	cursor: pointer;
+}
+#searchResults .searchRe:hover {
+	background-color: #d9d9ce;
+}
+#searchResultsDetail {
+	width: 50%;
+	height: 100%;
+	background-color: #d9d9ce;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#searchResultsDetail .hot {
+	color: red;
+}
+#searchResultsDetail span {
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+	margin: 10px 20px;
+}
+#searchResultsDetail>div {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	display: flex;
+	margin: 10px 10px;
+	flex-wrap: wrap;
+}
+#searchResultsDetail>div>div {
+	background-color: #fff;
+	width: 50px;
+	height: 20px;
+	margin: 10px;
+	text-align: center;
+	line-height: 16px;
+	cursor: pointer;
+}
+#searchResultsDetail div div:hover {
+	background-color: red;
+	color: #fff;
+}
+#digitalCode {
+	width: 60px;
+	height: 78px;
+	position: absolute;
+	top: 20px;
+	right: 80px;
+	padding: 5px;
+	border: 1px solid #eee;
+}
+#digitalCode p {
+	font-size: 14px;
+	line-height: 18px;	
+	text-align: center;
+	color: #F40;
+}
+#closeDigitalCode {
+	border: 1px solid #eee;
+	height: 15px;
+	width: 15px;
+	position: absolute;
+	top: -1px;
+	right: 70px;
+	font-size: 10px;
+	line-height: 15px;
+	text-align: center;
+}
+#closeDigitalCode:hover {
+	cursor: pointer;
+}
+
